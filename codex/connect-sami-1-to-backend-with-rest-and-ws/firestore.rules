@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+    function hasRole(role) {
+      return isSignedIn() && request.auth.token.role == role;
+    }
+
+    match /users/{uid} {
+      allow read, write: if isOwner(uid);
+    }
+
+    match /emotions/{uid}/entries/{entryId} {
+      allow read, write: if isOwner(uid);
+    }
+
+    match /billing/{uid}/subscriptions/{id} {
+      allow read, write: if isOwner(uid);
+    }
+
+    match /professionals/{pid} {
+      allow read: if true; // public profile
+      allow write: if hasRole('admin');
+    }
+
+    match /analytics/{docId} {
+      allow write: if hasRole('admin');
+      allow read: if false;
+    }
+
+    match /audit_logs/{docId} {
+      allow read, write: if hasRole('admin');
+    }
+  }
+}

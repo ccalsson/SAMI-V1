@@ -1,0 +1,91 @@
+name: mindcare
+description: Una aplicación de bienestar mental y meditación con IA transversal
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  
+  # State Management
+  provider: ^6.1.1
+
+  # HTTP & API
+  http: ^1.5.0
+  dio: ^5.4.0
+
+  # Storage & Cache
+  shared_preferences: ^2.2.2
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+
+  # Web Support
+  flutter_web_plugins:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  firebase_storage: ^11.5.6
+  firebase_analytics: ^10.7.4
+  firebase_remote_config: ^4.3.8
+  cloud_functions: ^4.5.8
+
+  # Payments
+  flutter_stripe: ^12.0.2
+
+  # Routing
+  go_router: ^16.2.1
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+
+  # Environment & Config
+  flutter_dotenv: ^6.0.0
+
+  # UI Components
+  flutter_svg: ^2.0.9
+  shimmer: ^3.0.0
+
+  # Utils
+  uuid: ^4.2.1
+  firebase_crashlytics: ^3.5.7
+  firebase_performance: ^0.9.4+7
+  local_auth: ^2.1.6
+  flutter_secure_storage: ^9.0.0
+  encrypt: ^5.0.1
+  firebase_app_check: ^0.2.0
+  health: ^13.1.4
+  get_it: ^8.2.0
+  just_audio: ^0.10.4
+  connectivity_plus: ^6.0.3
+  path_provider: ^2.1.2
+  web_socket_channel: ^2.4.0
+  json_annotation: ^4.8.1
+  collection: ^1.18.0
+  crypto: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mockito: ^5.5.0
+  test: ^1.26.2
+  mocktail: ^1.0.4
+  build_runner: ^2.4.9
+  isar_generator: ^3.1.0+1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/audio/

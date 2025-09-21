@@ -1,0 +1,26 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - backend/**
+    - codex/**
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    missing_required_param: error
+    missing_return: error
+    dead_code: error
+    prefer_const_constructors: ignore
+    deprecated_member_use: ignore
+    use_build_context_synchronously: ignore
+    prefer_function_declarations_over_variables: ignore
+    unnecessary_to_list_in_spreads: ignore
+    always_use_package_imports: ignore
+
+linter:
+  rules:
+    prefer_single_quotes: true
+    avoid_print: true
+    always_use_package_imports: true

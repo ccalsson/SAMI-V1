@@ -1,0 +1,7 @@
+aiohttp
+websockets
+pyyaml
+psutil
+netifaces
+onvif-zeep
+aiortc

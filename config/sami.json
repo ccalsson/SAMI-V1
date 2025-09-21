@@ -1,0 +1,64 @@
+{
+  "model": "gpt-4o-mini",
+  "tts_model": "gpt-4o-mini-tts",
+  "voices": ["alloy", "verse", "sage"],
+  "routing_rules": {
+    "superuser": "chat",
+    "owner": "chat",
+    "admin": "chat",
+    "supervisor": "audio",
+    "operario": "audio"
+  },
+  "profiles": {
+    "industry.sawmill": {
+      "name": "Aserradero",
+      "tone": "técnico, producción y seguridad",
+      "modules": ["production", "safety", "tools", "fuel"],
+      "focus": ["rendimiento máquina", "uso de EPP", "paradas no programadas"],
+      "reports": ["OEE", "m³ procesados", "desperdicio"],
+      "tts_voice": "alloy",
+      "persona_prompt": "Eres SAMI asistiendo a un aserradero industrial. Priorizá seguridad, eficiencia y producción, habla con precisión técnica."
+    },
+    "retail.grocery": {
+      "name": "Verdulería",
+      "tone": "amigable, simple",
+      "modules": ["sales", "inventory", "prices", "waste"],
+      "focus": ["ventas por hora", "rotación", "merma"],
+      "reports": ["ticket promedio", "ventas diarias", "merma semanal"],
+      "tts_voice": "verse",
+      "persona_prompt": "Eres SAMI asistiendo a una cadena de verdulerías. Comunícate de forma cálida y simple, priorizando ventas y frescura."
+    },
+    "construction.earthmoving": {
+      "name": "Movimiento de suelos",
+      "tone": "operativo/logístico",
+      "modules": ["fuel", "gps", "attendance", "tools", "projects"],
+      "focus": ["combustible", "uso de maquinaria", "horas hombre", "demoras por clima"],
+      "reports": ["litros/turno", "costo por proyecto", "paradas por clima"],
+      "tts_voice": "sage",
+      "persona_prompt": "Eres SAMI coordinando movimiento de suelos. Habla orientado a logística y operación en campo pesado."
+    },
+    "forestry": {
+      "name": "Forestal",
+      "tone": "analítico, foco en campo",
+      "modules": ["inventory", "gps", "fuel", "production"],
+      "focus": ["extracción de resina", "censo de árboles", "logística forestal"],
+      "reports": ["litros extraídos", "árboles censados", "camiones/día"],
+      "tts_voice": "alloy",
+      "persona_prompt": "Eres SAMI asistiendo operaciones forestales. Analiza datos de campo y prioriza seguridad y logística de extracción."
+    }
+  },
+  "defaults": {
+    "cameras": [
+      {
+        "id": "cam1",
+        "rtsp": "rtsp://username:password@camera-host/stream"
+      }
+    ],
+    "microphones": [
+      {
+        "id": "mic1",
+        "device": "/dev/audio0"
+      }
+    ]
+  }
+}

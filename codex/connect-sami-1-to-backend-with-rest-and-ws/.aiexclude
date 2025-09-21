@@ -1,0 +1,4 @@
+# Exclude sensitive files
+/app/google-services.json
+/keystore.properties
+/app/release 

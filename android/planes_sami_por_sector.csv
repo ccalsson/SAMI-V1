@@ -1,0 +1,16 @@
+Sector;SKU;Plan;Setup_USD;Monthly_USD;Cámaras_incluidas;Agentes_incluidos;Alertas_mensuales;Días_storage;Addons_incluidos
+Verdulería;VERD-BASE;Basic;300;49;4;1;300;7;WhatsApp Alerts Lite
+Verdulería;VERD-PRO;Pro;600;99;8;2;1000;15;Reconocimiento de herramientas, IA reglas
+Verdulería;VERD-ENT;Enterprise;1200;199;16;3;3000;30;IA avanzada, DR 1-click, SSO
+Aserradero;ASER-BASE;Basic;600;149;8;2;1000;15;Sensores RFID, alertas surtidor
+Aserradero;ASER-PRO;Pro;1200;299;16;3;3000;30;Zonas IA, control herramientas
+Aserradero;ASER-ENT;Enterprise;2500;499;32;5;6000;60;Alta disponibilidad, multi-sitio
+Yerbatera;YERB-BASE;Basic;800;199;8;2;1000;15;Control patios, accesos
+Yerbatera;YERB-PRO;Pro;1500;349;16;3;3000;30;RFID pallets, IA procesos
+Yerbatera;YERB-ENT;Enterprise;3000;599;32;5;6000;60;Multi-obra, backups avanzados
+Logística;LOGI-BASE;Basic;500;129;6;2;800;15;Dock control, ANPR básico
+Logística;LOGI-PRO;Pro;1000;249;12;3;2500;30;ANPR pro, ruteo básico
+Logística;LOGI-ENT;Enterprise;2000;449;24;5;6000;60;Integración TMS/ERP
+Movimiento de suelos;MOV-BASE;Basic;700;179;6;2;1000;15;Surtidor + herramientas
+Movimiento de suelos;MOV-PRO;Pro;1400;329;12;3;3000;30;Sat-link opcional, IA seguridad
+Movimiento de suelos;MOV-ENT;Enterprise;2800;579;24;5;6000;60;Multi-obra sat, DR avanzado

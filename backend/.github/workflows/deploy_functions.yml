@@ -1,0 +1,18 @@
+name: deploy_functions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 18
+      - run: npm --prefix server/functions ci
+      - run: npm --prefix server/functions test
+      - run: npm --prefix server/functions run deploy
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

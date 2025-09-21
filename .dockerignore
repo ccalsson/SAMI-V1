@@ -1,0 +1,11 @@
+build
+android_old
+ios/Pods
+macos/Pods
+**/.dart_tool
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/build
+logs
+assets/mocks
